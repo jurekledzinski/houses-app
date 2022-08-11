@@ -36,6 +36,7 @@ export default {
   border: none;
   border-radius: 5px;
   outline: none;
+  background-color: white;
   color: var(--tertiary-element-color-2);
   font-family: var(--font-family-2);
   font-weight: 400;
