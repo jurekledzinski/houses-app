@@ -9,7 +9,6 @@ const housesActions = {
   async handleFetchAllHouses(context) {
     const myHeaders = getFetchHeaders();
     const requestOptions = getRequestOptions('GET', myHeaders);
-    // const url = 'https://api.intern.d-tt.nl/api/houses';
     const url = '/.netlify/functions/house';
     // Call fetch api
     const data = await fetchData(url, requestOptions, 'json');
@@ -34,7 +33,6 @@ const housesActions = {
       formdataCreate
     );
 
-    // const urlCreate = 'https://api.intern.d-tt.nl/api/houses';
     const urlCreate = '/.netlify/functions/house';
     const urlEdit = `/.netlify/functions/house?id=${value?.id}`;
 
@@ -44,8 +42,6 @@ const housesActions = {
     //Call fetch api
     const data = await fetchData(url1, reqOptions1, 'json');
     // Add data image from form
-    // const imageId = data.value.imageId;
-    if (editID) console.log(value, 'przed upload');
 
     const formdataUpload = getFormData('upload', value);
     //Request options
@@ -54,7 +50,6 @@ const housesActions = {
     //If value.id is undefined so in isNaN(value.id) this is true, then id house when create form, if false id house from edit form
     const idHouse = editID ? value?.id : data.value._id;
     const url2 = `/.netlify/functions/image?id=${idHouse}`;
-    // const url2 = `https://api.intern.d-tt.nl/api/houses/${idHouse}/upload`;
 
     //Call fetch api
     const data1 = await fetchData(url2, reqOptions2, 'json');
