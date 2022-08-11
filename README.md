@@ -1,24 +1,27 @@
-# routing
+# ![WebApp]()
 
-## Project setup
-```
-npm install
-```
+# Houses
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### Features
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- Add, edit, delete house.
+- Sort houses.
+- Filter houses.
 
-### Lints and fixes files
-```
-npm run lint
-```
+### Technologies
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Build with:
+
+- [VueJS](https://vuejs.org/) - The Progressive JavaScript Framework.
+- [Vue router](https://router.vuejs.org/) - The official router for Vue.js.
+- [Vuex](https://vuex.vuejs.org/) - The official state management library for Vue.
+- [Mongoose](https://nodejs.org/en/) - Elegant MongoDB object modeling for Node.js.
+- [Imagekit](https://expressjs.com/) - ImageKit's real-time image and video optimizations.
+
+#### See live
+
+[Houses](https://lambent-concha-f0b55d.netlify.app)
+
+## License
+
+MIT © [Jurek Ledziński](https://github.com/jurekledzinski)
